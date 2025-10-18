@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>호암치유문화마을</title>
+<style>
+  body { font-family: 돋움, Arial, sans-serif; background: #f9f9f9; color: #333; margin: 0; }
+  header { background: #2a5d38; color: white; text-align: center; padding: 2rem 1rem; }
+  nav { background: #3e7c53; padding: 1rem; text-align: center; }
+  nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+  nav a:hover { text-decoration: underline; }
+  main { padding: 2rem 1rem; max-width: 960px; margin: auto; background: white; box-shadow: 0 0 8px rgba(0,0,0,0.1);}
+  section { margin-bottom: 2rem; }
+  h2 { border-bottom: 2px solid #2a5d38; padding-bottom: 0.5rem; }
+  footer { background: #2a5d38; color: white; text-align: center; padding: 1rem; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>호암치유문화마을</h1>
+  <p>자연과 사람이 함께하는 치유와 힐링의 공간</p>
+</header>
+
+<nav>
+  <a href="#intro">소개</a>
+  <a href="#facilities">시설안내</a>
+  <a href="#experience">체험프로그램</a>
+  <a href="#visit">방문안내</a>
+  <a href="#contact">연락처</a>
+</nav>
+
+<main>
+  <section id="intro">
+    <h2>호암치유문화마을 소개</h2>
+    <p>호암치유문화마을은 전라북도 고창군에 위치한 자연과 신앙이 어우러진 치유의 공간입니다. 
+    한센인 정착촌으로 시작하여 강칼라 수녀님의 헌신으로 주민과 방문객 모두에게 희망과 사랑을 전합니다.</p>
+  </section>
+
+  <section id="facilities">
+    <h2>시설안내</h2>
+    <ul>
+      <li>호암카페 - 휴식 공간</li>
+      <li>도자기체험장 - 직접 만드는 도자기 체험</li>
+      <li>명상관 - 명상과 치유 프로그램 운영</li>
+      <li>캠프장 - 산촌 캠핑 및 야외 행사장</li>
+      <li>족욕장 - 자연 속의 족욕 체험</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>체험프로그램</h2>
+    <p>명상스테이, 아로마테라피, 황토맨발길 걷기, 전통 음식 체험 등 다양한 힐링 프로그램이 준비되어 있습니다.</p>
+  </section>
+
+  <section id="visit">
+    <h2>방문안내</h2>
+    <p><strong>주소:</strong> 전라북도 고창군 고창읍 신월리 호암안길 11-5</p>
+    <p><strong>문의전화:</strong> 063-563-8673</p>
+    <p><strong>운영시간:</strong> 매일 09:00 ~ 18:00</p>
+  </section>
+
+  <section id="contact">
+    <h2>연락처 및 SNS</h2>
+    <p>이메일: contact@hoamvillage.kr (예시)</p>
+    <p>인스타그램: @hoam_village</p>
+    <p>페이스북: facebook.com/hoamvillage</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 호암치유문화마을. 모든 권리 보유.</p>
+</footer>
