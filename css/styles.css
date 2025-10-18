@@ -1,0 +1,92 @@
+:root{
+  --brand:#35603e;
+  --accent:#7aa77a;
+  --bg:#f6faf6;
+  --card:#ffffff;
+  --text:#23302a;
+  --muted:#6b7a6f;
+  --max-width:1200px;
+  --radius:12px;
+  font-family: "Noto Sans KR", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Wrapper */
+.wrap{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+
+/* Header */
+.site-header{background:transparent;padding:0.6rem 0}
+.brand .site-title{margin:0;font-size:1.25rem;color:var(--brand)}
+.brand .site-sub{margin:0;font-size:0.9rem;color:var(--muted)}
+
+.site-nav .nav-links{display:flex;gap:0.75rem;align-items:center}
+.site-nav a{color:var(--text);text-decoration:none;padding:0.35rem 0.6rem;border-radius:8px}
+.site-nav a:hover{background:rgba(54,96,62,0.06)}
+.nav-toggle{display:none}
+
+/* HERO 슬라이드 */
+.hero{margin:1rem auto;border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 18px rgba(34,48,42,0.08)}
+.hero-slides{position:relative;height:44vh;min-height:300px}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;transition:opacity 600ms ease;opacity:0;display:flex;align-items:center}
+.slide[aria-hidden="false"]{opacity:1}
+.overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,10,0.15),rgba(10,20,10,0.25))}
+.hero-text{position:relative;color:#fff;padding:2rem;max-width:720px}
+.hero-text h2{margin:0;font-size:2rem}
+.hero-text p{margin:0.5rem 0 0;color:rgba(255,255,255,0.9)}
+.slide-prev,.slide-next{
+  position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.35);border:none;color:#fff;padding:0.4rem 0.6rem;border-radius:6px;cursor:pointer
+}
+.slide-prev{left:12px}
+.slide-next{right:12px}
+
+/* Sections */
+section{background:var(--card);padding:1.25rem;border-radius:10px;margin-bottom:1rem;box-shadow:0 4px 12px rgba(34,48,42,0.04)}
+h3{border-left:4px solid var(--accent);padding-left:0.6rem;margin-top:0}
+
+/* 카드들 */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{border-radius:10px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,0.96),#fff);box-shadow:0 2px 8px rgba(20,30,24,0.03)}
+.card img{width:100%;height:160px;object-fit:cover;display:block}
+.card h4{margin:0.6rem 0 0.3rem;padding:0 0.8rem}
+.card p{padding:0 0.8rem 1rem;margin:0;color:var(--muted)}
+
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.75rem}
+.gallery-item{border-radius:10px;overflow:hidden;background:#fff}
+.gallery-item img{width:100%;height:160px;object-fit:cover;display:block;filter:grayscale(0%);transition:transform 250ms ease,filter 300ms ease}
+.gallery-item:hover img{transform:scale(1.03);filter:brightness(0.95)}
+.gallery-item figcaption{padding:0.6rem;font-size:0.95rem;color:var(--muted)}
+
+/* Contact form */
+.contact-form label{display:block;margin-top:0.6rem;font-weight:600}
+.contact-form input,.contact-form textarea{width:100%;padding:0.6rem;border:1px solid #e7eee7;border-radius:8px}
+.contact-form button{margin-top:0.8rem;background:var(--brand);color:#fff;padding:0.6rem 1rem;border:none;border-radius:8px;cursor:pointer}
+
+/* Footer */
+.site-footer{background:transparent;padding:1rem;margin-top:1rem;color:var(--muted)}
+.site-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);z-index:1000;padding:2rem}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90%;max-height:80%;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.5)}
+.lightbox .caption{margin-top:0.6rem;color:#fff;text-align:center}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-text h2{font-size:1.4rem}
+  .slide-prev,.slide-next{display:none}
+  .nav-toggle{display:inline-block}
+  .site-nav .nav-links{display:none;position:absolute;right:1rem;top:64px;background:#fff;padding:0.6rem;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.08)}
+  .site-nav .nav-links.show{display:flex;flex-direction:column}
+}

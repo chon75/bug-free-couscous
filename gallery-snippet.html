@@ -1,0 +1,14 @@
+<section id="gallery" aria-labelledby="gallery-title" class="wrap">
+  <h3 id="gallery-title">갤러리</h3>
+  <p class="small">이미지를 클릭하면 확대됩니다.</p>
+  <div class="gallery-grid" role="list">
+    <!-- 각 이미지 파일은 images/ 아래에 480/1024/1600 버전이 있어야 합니다 -->
+    <figure class="gallery-item" role="listitem">
+      <a href="images/room-bedding-1600.jpg">
+        <img src="images/room-bedding-1024.jpg" srcset="images/room-bedding-480.jpg 480w, images/room-bedding-1024.jpg 1024w, images/room-bedding-1600.jpg 1600w" sizes="(max-width:600px) 100vw, 33vw" alt="바닥 침상과 접이식 이불" loading="lazy">
+      </a>
+      <figcaption>편안한 바닥 침구</figcaption>
+    </figure>
+    <!-- 이하 이미지 2~7 동일 패턴으로 추가 -->
+  </div>
+</section>
